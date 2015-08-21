@@ -1,22 +1,144 @@
 /* styles */
 
-// global elements
+/* Color Pallete
+red: #DC3522;
+tan: #D9CB9E;
+grey1: #374140;
+grey2: #2A2C2B;
+grey3: #1E1E20;
+
+*/
+
+/* global elements */
+
+html {
+	margin: 0px;
+	padding: 0px;
+}
+body { 
+	font: 16px arial, sans-serif;
+	line-height: 1.1em;
+	color: #374140; 
+	margin: auto;
+	padding: 0px;
+	background-color: #2A2C2B;
+}
+p { 
+	margin: 0px; 
+	padding: 0px;
+	text-align: left;
+}
+h1, h2, h3, h4 { 
+	font: normal normal 1.4em arial, sans-serif;
+	letter-spacing: 1px;
+	margin: 0px;
+	padding: 0px;
+	color: #374140;
+}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #374140;
+}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #374140;
+}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #1E1E20;
+}
 
 
-// basic layout 
 
-#ux-lab{}
-.header{}
-.nav{}
-.nav-label{}
-#ux-lab-main{}
-.card{}
-#sidebar {}
-.footer{}
+/* basic layout: desktop */
+
+.header, .nav, #ux-lab-main, .footer {
+	margin: 0px 2rem 0px 2rem;
+}
+
+.header {
+	background-color: #D9CB9E;
+	padding: 20px 0px 10px 0px;
+}
+
+.nav {
+	text-align: left;
+	background-color: #D9CB9E;
+}
+
+.nav > ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0px;
+	padding: 10px 0px 10px 0px;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+.nav-label {
+	display: inline-block;
+	text-transform: uppercase;
+}
+.nav-label > a {
+	padding: 10px 15px 10px 15px;
+}
+.nav-label:first-child {
+	padding-left: 23px;
+}
+
+#ux-lab-main {
+	background-color: #fff;
+	padding: 20px 0px 40px 20px;
+}
+
+.card {
+	display: inline-block;
+	width: 65%;
+	padding: 20px;
+	border: solid 1px #f8f8f8;
+	border-radius: 25px;
+	background-color: #f8f8f8;
+	overflow: hidden;
+	margin: 0px 20px 20px 0px;
+}
+
+.card > img {
+    float: left;
+    max-width: 300px;
+    position: absolute;
+}
+
+.card-details {
+	margin-left: 320px;
+	float: right;
+	text-align: left;
+} 
+
+#sidebar {
+	float: right;
+}
+.footer {
+	background-color: #D9CB9E;
+}
 
 
-// typography
+/* typography */
 
+.header > h1, .header > h2 {
+	color: #DC3522;
+	display: inline-block;
+	font-size: 3em;
+}
 
-// tablet & mobile
+.header > h1 {
+	font-weight: bold;
+	margin-left: 20px;
+	text-transform: uppercase;
+}
+
+.nav-label > a:focus, .nav-label > a:hover  {
+	text-decoration: none;
+	background-color: #D9CB9E;
+}
+/* tablet & mobile */
 
