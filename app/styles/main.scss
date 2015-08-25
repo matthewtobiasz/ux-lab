@@ -1,15 +1,19 @@
 /* styles */
 
-/* Color Pallete
-red: #DC3522;
-tan: #D9CB9E;
-grey0 #6d7372;
-grey1: #374140;
-grey2: #2A2C2B;
-grey3: #1E1E20;
+$primary-color: #DC3522;
+$secondary-color: #D9CB9E;
 
-*/
+$white: #fff;
+$grey1: #f8f8f8;
+$grey2: #cccccc;
+$grey3: #6d7372;
+$grey4: #374140;
+$grey5: #2A2C2B;
+$grey6: #1E1E20;
 
+
+
+$font-family: arial, sans-serif;
 
 html {
 	margin: 0px;
@@ -17,28 +21,28 @@ html {
 }
 
 body { 
-	font: 16px arial, sans-serif;
+	font: 16px $font-family;
 	line-height: 1.1em;
-	color: #374140; 
+	color: $grey4; 
 	margin: auto;
 	padding: 0px;
-    background-color: #fff;
-    border: solid 2em #2A2C2B;
+    background-color: $white;
+    border: solid 2em $grey5;
     border-top: 0px;
     border-bottom: 2em;
 }
 
 h1, h2, h3, h4 { 
-	font: normal normal 1.4em arial, sans-serif;
+	font: normal normal 1.4em $font-family;
 	letter-spacing: 1px;
 	margin: 0px;
 	padding: 0px;
-	color: #374140;
+	color: $grey4;
 }
 
 p {
-	color: #6d7372;
-	font: 18px/22px Arial, sans-serif;
+	color: $grey2;
+	font: 18px/22px $font-family;
 	margin: 0px; 
 	padding: 0px;
 	text-align: left;
@@ -47,16 +51,16 @@ p {
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #374140;
+	color: $grey4;
 }
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #374140;
+	color: $grey4;
 }
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	color: #1E1E20;
+	color: $grey6;
 }
 
 
@@ -64,7 +68,7 @@ a:hover, a:focus, a:active {
 
 .nav {
 	text-align: left;
-	background-color: #D9CB9E;
+	background-color: $secondary-color;
 }
 
 .nav > ul {
@@ -90,19 +94,19 @@ a:hover, a:focus, a:active {
 
 .nav-label > a:focus, .nav-label > a:hover  {
 	text-decoration: none;
-	background-color: #D9CB9E;
+	background-color: $secondary-color;
 }
 
 
 /* Basic Layout */
 
 .header {
-	background-color: #D9CB9E;
+	background-color: $secondary-color;
 	padding: 20px 0px 10px 0px;
 }
 
 .header > h1, .header > h2 {
-	color: #DC3522;
+	color: $primary-color;
 	display: inline-block;
 	font-size: 3em;
 }
@@ -137,9 +141,9 @@ a:hover, a:focus, a:active {
 .card {
 	display: inline-block;
 	padding: 20px;
-	border: solid 1px #f8f8f8;
+	border: solid 1px $grey1;
 	border-radius: 10px;
-	background-color: #f8f8f8;
+	background-color: $grey1;
 	overflow: hidden;
 	margin: 0px 0px 20px 0px;
 }
@@ -160,7 +164,7 @@ a:hover, a:focus, a:active {
 }
 
 .card p {
-	color: #374140;
+	color: $grey4;
 	margin-bottom: 10px;
 }
 
@@ -186,7 +190,7 @@ a:hover, a:focus, a:active {
     margin: 0px 0px 10px 0px;
     text-transform: uppercase;
     font-weight: normal;
-    color: #DC3522;
+    color: $primary-color;
 	line-height: 22px;
 }
 
@@ -194,12 +198,12 @@ a:hover, a:focus, a:active {
 /* Styles for Sidebar */
 
 .sidebar > h3 {
-    color: #DC3522;
+    color: $primary-color;
 	margin: 10px 0px 10px 0px;
 }
 .sidebar p {
-	color: #6d7372;
-	font: 16px/22px Arial, sans-serif;
+	color: $grey3;
+	font: 16px/22px $font-family;
 }
 
 /* Footer Styles */
@@ -207,30 +211,30 @@ a:hover, a:focus, a:active {
 .footer {
 	padding: 20px;
 	clear: both;
-	background-color: #D9CB9E;
-    border-bottom: solid 4em #2A2C2B;
+	background-color: $secondary-color;
+    border-bottom: solid 4em $grey5;
 }
 
 .footer > h4 {
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #DC3522;
+	color: $primary-color;
 }
 
 .footer > p, .footer > p > a {
-    color: #374140;
+    color: $grey4;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
 }
 .footer > p > a {
-	border-bottom: solid 1px #6d7372;
+	border-bottom: solid 1px $grey3;
 	text-decoration: none;
 }
 
 .footer > p > a:hover {
-	border-bottom: solid 1px #1E1E20;
+	border-bottom: solid 1px $grey6;
 	text-decoration: none;
 }
 
