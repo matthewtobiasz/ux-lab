@@ -15,9 +15,16 @@ $grey6: #1E1E20;
 
 $font-family: arial, sans-serif;
 
+
+
+// Compass Vertical Rhythm Settings
+$base-font-size: 20px; // Sets the base font size
+$base-line-height: 36px; // Sets the base line height 
+
+
 body { 
 	font: 16px $font-family;
-	line-height: 1.1em;
+	line-height: 1.5em;
 	color: $grey4; 
 	margin: auto;
     background-color: $white;
@@ -26,10 +33,24 @@ body {
     border-bottom: 2em;
 }
 
-h1, h2, h3, h4 { 
-	font: normal normal 1.4em $font-family;
+
+h1, 
+h2, 
+h3, 
+h4 { 
+	font-family: $font-family;
+	font-weight: normal;
+	font-style: normal;
 	letter-spacing: 1px;
 }
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.4em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1em; }
+
+
 
 p {
 	font: 18px/22px $font-family;
@@ -94,7 +115,8 @@ a {
 	padding: 20px 0 10px 0;
 }
 
-.header > h1, .header > h2 {
+.header > h1, 
+.header > h2 {
 	color: $primary-color;
 	display: inline-block;
 	font-size: 3em;
@@ -141,46 +163,40 @@ a {
     margin: 0;
 }
 
-.card > img {
+.card-img {
     max-width: 300px;
     position: absolute;
 }
 
 .card-details {
-	margin-left: 320px;
+
+	margin-left: 20em;
 	float: right;
 	text-align: left;
-}
 
-.card p {
-	margin-bottom: 10px;
-}
+	p {
+		margin-bottom: .4em;
 
-.card-details p:last-child {
-	margin-bottom: 20px;
-}
+		&:last-child {
+			margin-bottom: .8em;
+		}
+	}
 
-.card-details > h3 {
-    margin: 0 0 10px 0;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 22px;
-}
+	h3 {
+	    margin-bottom: .4em;
+		font-weight: bold;
+	}
 
-.card-details > h4 > a {
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 22px;
-}
+	a {
+		font-weight: normal;
+	}
 
-.card-details > h5 {
-    margin: 0 0 10px 0;
-    text-transform: uppercase;
-    font-weight: normal;
-    color: $primary-color;
-	line-height: 22px;
+	h5 {
+	    margin-bottom: .4em;
+	    text-transform: uppercase;
+	    color: $primary-color;
+	}
 }
-
 
 /* Styles for Sidebar */
 
@@ -192,6 +208,7 @@ a {
 	color: $grey3;
 	font: 16px/22px $font-family;
 }
+
 
 /* Footer Styles */
 
