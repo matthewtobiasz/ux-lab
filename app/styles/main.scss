@@ -48,20 +48,20 @@ p {
 	text-align: left;
 }
 
-a:link { 
+a {
 	font-weight: bold; 
 	text-decoration: none; 
 	color: $grey4;
+
+	&:hover, 
+	&:focus, 
+	&:active { 
+		text-decoration: underline; 
+		color: $grey6;
+	}
+
 }
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: $grey4;
-}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: $grey6;
-}
+
 
 
 /* Navigation */
@@ -81,22 +81,23 @@ a:hover, a:focus, a:active {
 
 .nav-label {
 	display: inline-block;
-	text-transform: uppercase;
-}
 
-.nav-label > a {
-	padding: 10px 15px 10px 15px;
-}
+	&:first-child {
+		padding-left: 23px;
+	}
 
-.nav-label:first-child {
-	padding-left: 23px;
-}
 
-.nav-label > a:focus, .nav-label > a:hover  {
-	text-decoration: none;
-	background-color: $secondary-color;
-}
+	a {
+		text-transform: uppercase;
+		padding: 10px 15px 10px 15px;
 
+		&:focus,
+		&:hover  {
+			text-decoration: none;
+			background-color: $secondary-color;
+		}
+	}
+}
 
 /* Basic Layout */
 
