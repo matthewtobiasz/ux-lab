@@ -15,36 +15,24 @@ $grey6: #1E1E20;
 
 $font-family: arial, sans-serif;
 
-html {
-	margin: 0px;
-	padding: 0px;
-}
-
 body { 
 	font: 16px $font-family;
 	line-height: 1.1em;
 	color: $grey4; 
 	margin: auto;
-	padding: 0px;
     background-color: $white;
     border: solid 2em $grey5;
-    border-top: 0px;
+    border-top: 0;
     border-bottom: 2em;
 }
 
 h1, h2, h3, h4 { 
 	font: normal normal 1.4em $font-family;
 	letter-spacing: 1px;
-	margin: 0px;
-	padding: 0px;
-	color: $grey4;
 }
 
 p {
-	color: $grey2;
 	font: 18px/22px $font-family;
-	margin: 0px; 
-	padding: 0px;
 	text-align: left;
 }
 
@@ -74,8 +62,8 @@ a {
 .nav > ul {
 	width: 100%;
 	list-style-type: none;
-	margin: 0px;
-	padding: 10px 0px 10px 0px;
+	margin: 0;
+	padding: 10px 0 10px 0;
 	background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -103,7 +91,7 @@ a {
 
 .header {
 	background-color: $secondary-color;
-	padding: 20px 0px 10px 0px;
+	padding: 20px 0 10px 0;
 }
 
 .header > h1, .header > h2 {
@@ -125,7 +113,7 @@ a {
 .ux-lab-main {
     float: left;
     width: 60%;
-    margin: 0px 40px 40px 0px;
+    margin: 0 40px 40px 0;
     border-right: 1px solid #ccc;
     padding-right: 40px;
 }
@@ -133,7 +121,7 @@ a {
 .sidebar {
 	float: left;
 	width: 30%;
-	padding: 0px;
+	padding: 0;
 }
 
 
@@ -146,11 +134,11 @@ a {
 	border-radius: 10px;
 	background-color: $grey1;
 	overflow: hidden;
-	margin: 0px 0px 20px 0px;
+	margin: 0 0 20px 0;
 }
 
 .card:last-child {
-    margin: 0px;
+    margin: 0;
 }
 
 .card > img {
@@ -165,7 +153,6 @@ a {
 }
 
 .card p {
-	color: $grey4;
 	margin-bottom: 10px;
 }
 
@@ -174,21 +161,20 @@ a {
 }
 
 .card-details > h3 {
-    margin: 0px 0px 10px 0px;
+    margin: 0 0 10px 0;
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 22px;
 }
 
 .card-details > h4 > a {
-    margin: 0px 0px 0px 0px;
 	font-weight: normal;
 	font-size: 20px;
 	line-height: 22px;
 }
 
 .card-details > h5 {
-    margin: 0px 0px 10px 0px;
+    margin: 0 0 10px 0;
     text-transform: uppercase;
     font-weight: normal;
     color: $primary-color;
@@ -200,7 +186,7 @@ a {
 
 .sidebar > h3 {
     color: $primary-color;
-	margin: 10px 0px 10px 0px;
+	margin: 10px 0 10px 0;
 }
 .sidebar p {
 	color: $grey3;
@@ -224,7 +210,6 @@ a {
 }
 
 .footer > p, .footer > p > a {
-    color: $grey4;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
