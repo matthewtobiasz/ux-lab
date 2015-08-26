@@ -14,5 +14,5 @@ Here's how to compile Sass stylesheets to CSS:
 
 ### View Site
 
-Open [index.html](https://github.com/matthewtobiasz/ux-lab/blob/master/app/index.html) in your browser.
+Open [index.html](https://github.com/matthewtobiasz/ux-lab/blob/master/index.html) in your browser.
 
