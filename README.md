@@ -2,7 +2,7 @@
 
 ### Dependencies
 
-UX-Lab uses [Compass](http://compass-style.org/) Sass framework, here are the instructions for installing Compass: http://compass-style.org/install/
+UX-Lab uses a CSS preprocessor [Sass](http://sass-lang.com/) and a handy Sass framework, [Compass](http://compass-style.org/). When you install Compass, Sass is included as a dependency. Here are the Compass installation instructions: http://compass-style.org/install/
 
 ### Compile Sass
 
