@@ -16,10 +16,10 @@ $font-family: arial, sans-serif;
 
 
 body { 
-	font: 16px $font-family; 
-	line-height: 1.5em;
-	color: $grey-4; 
-	margin: auto;
+    font: 16px $font-family; 
+    line-height: 1.5em;
+    color: $grey-4; 
+    margin: auto;
     background-color: $white;
     border: solid 2em $grey-5;
     border-top: 0;
@@ -27,11 +27,11 @@ body {
 }
 
 @mixin heading($font-size) {
-	font-size: $font-size;
-	font-family: $font-family;
-	font-weight: normal;
-	font-style: normal;
-	letter-spacing: .5px;
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: .5px;
 }
 
 $h1-font-size: 3em;
@@ -49,24 +49,24 @@ h5 { @include heading($h5-font-size); }
 
 
 p {
-	font: 18px $font-family;
+    font: 18px $font-family;
 }
 
 
 @mixin link-active {
-	border-bottom: solid 1px $grey-6;
-	text-decoration: none;
+    border-bottom: solid 1px $grey-6;
+    text-decoration: none;
 }
 
 
 a {
-	text-decoration: none; 
-	color: $grey-4;
+    text-decoration: none; 
+    color: $grey-4;
 
-	&:hover, 
-	&:focus {
-		@include link-active;
-	}
+    &:hover, 
+    &:focus {
+        @include link-active;
+    }
 
 }
 
@@ -74,58 +74,58 @@ a {
 /* Navigation */
 
 .nav {
-	background-color: $secondary-color;
+    background-color: $secondary-color;
 
-	ul {
-		width: 100%;
-		list-style-type: none;
-		padding: 10px 0;
-		background-color: rgba(0, 0, 0, 0.05);
-	}
+    ul {
+        width: 100%;
+        list-style-type: none;
+        padding: 10px 0;
+        background-color: rgba(0, 0, 0, 0.05);
+    }
 }
 
 .nav-label {
-	display: inline-block;
+    display: inline-block;
 
-	&:first-child {
-		padding-left: 23px;
-	}
+    &:first-child {
+        padding-left: 23px;
+    }
 
 
-	a {
-		text-transform: uppercase;
-		padding: 14px;
+    a {
+        text-transform: uppercase;
+        padding: 14px;
 
-		&:focus,
-		&:hover  {
-			text-decoration: none;
-			background-color: $secondary-color;
-		}
-	}
+        &:focus,
+        &:hover  {
+            text-decoration: none;
+            background-color: $secondary-color;
+        }
+    }
 }
 
 /* Basic Layout */
 
 .header {
-	background-color: $secondary-color;
-	padding: 20px 0 10px 0;
+    background-color: $secondary-color;
+    padding: 20px 0 10px 0;
 
-	h1, 
-	h2 {
-	 	@include heading($h1-font-size); 
-		color: $primary-color;
-		display: inline-block;
-		text-transform: uppercase;
-	}
+    h1, 
+    h2 {
+        @include heading($h1-font-size); 
+        color: $primary-color;
+        display: inline-block;
+        text-transform: uppercase;
+    }
 
-	h1 {
-		font-weight: bold;
-		margin-left: 20px;
-	}
+    h1 {
+        font-weight: bold;
+        margin-left: 20px;
+    }
 }
 
 .container {
-	padding: 20px;
+    padding: 20px;
 }
 
 .ux-lab-main {
@@ -137,26 +137,26 @@ a {
 }
 
 .sidebar {
-	float: left;
-	width: 30%;
-	padding: 0;
+    float: left;
+    width: 30%;
+    padding: 0;
 }
 
 
 /* Styles for each Rollercoaster */
 
 .card {
-	display: inline-block;
-	padding: 20px;
-	border: solid 1px $grey-1;
-	border-radius: 10px;
-	background-color: $grey-1;
-	overflow: hidden;
-	margin: 0 0 20px 0;
+    display: inline-block;
+    padding: 20px;
+    border: solid 1px $grey-1;
+    border-radius: 10px;
+    background-color: $grey-1;
+    overflow: hidden;
+    margin: 0 0 20px 0;
 
-	&:last-child {
-	    margin: 0;
-	}
+    &:last-child {
+        margin: 0;
+    }
 }
 
 .card-img {
@@ -165,79 +165,79 @@ a {
 }
 
 .card-details {
-	margin-left: 20em;
-	float: right;
-	text-align: left;
+    margin-left: 20em;
+    float: right;
+    text-align: left;
 
-	$card-details-margin-bottom: .4em;
+    $card-details-margin-bottom: .4em;
 
-	p {
-		margin-bottom: $card-details-margin-bottom;
+    p {
+        margin-bottom: $card-details-margin-bottom;
 
-		&:last-child {
-			margin-bottom: $card-details-margin-bottom * 2;
-		}
-	}
+        &:last-child {
+            margin-bottom: $card-details-margin-bottom * 2;
+        }
+    }
 
-	h3 {
-	    margin-bottom: $card-details-margin-bottom;
-		font-weight: bold;
-	}
+    h3 {
+        margin-bottom: $card-details-margin-bottom;
+        font-weight: bold;
+    }
 
-	a {
-		font-weight: normal;
-	}
+    a {
+        font-weight: normal;
+    }
 
-	h5 {
-	    margin-bottom: $card-details-margin-bottom;
-	    text-transform: uppercase;
-	    color: $primary-color;
-	}
+    h5 {
+        margin-bottom: $card-details-margin-bottom;
+        text-transform: uppercase;
+        color: $primary-color;
+    }
 }
 
 /* Styles for Sidebar */
 
 .sidebar {
-	h3 {
-	    color: $primary-color;
-		margin: .4em 0;
-	}
-	p {
-		color: $grey-3;
-		font-size: 1em;
-		line-height: 1.3em;
-	}
+    h3 {
+        color: $primary-color;
+        margin: .4em 0;
+    }
+    p {
+        color: $grey-3;
+        font-size: 1em;
+        line-height: 1.3em;
+    }
 }
 
 
 /* Footer Styles */
 
 .footer {
-	padding: 1.2em;
-	clear: both;
-	background-color: $secondary-color;
+    padding: 1.2em;
+    clear: both;
+    background-color: $secondary-color;
     border-bottom: solid 4em $grey-5;
 
-	$footer-font-size: .9em;
+    $footer-font-size: .9em;
 
 
     h4 {
-		font-size: $footer-font-size;
-		text-transform: uppercase;
-		font-weight: bold;
-		color: $primary-color;
-	}
+        font-size: $footer-font-size;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $primary-color;
+    }
 
-	p {
-		font-size: $footer-font-size;
+    p {
+        font-size: $footer-font-size;
 
-		a {
-			border-bottom: solid 1px $grey-3;
+        a {
+            border-bottom: solid 1px $grey-3;
 
-			&:hover {
-				@include link-active();
-			}
-		}
+            &:hover {
+                @include link-active();
+            }
+        }
 
-	}
+    }
 }
