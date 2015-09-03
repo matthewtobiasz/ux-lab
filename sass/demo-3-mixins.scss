@@ -1,0 +1,35 @@
+$primary-color: #000;
+$secondary-color: #fff;
+$font-family: sans-serif;
+$base-text-size: 16px;
+$btn-margin: 30px;
+
+
+@mixin buttons($btn-background-color, $btn-text-color, $text-size, $font-family, $btn-padding, $btn-margin) {
+    display: inline-block;
+    background-color: $btn-background-color;
+    padding: $btn-padding;
+    margin: $btn-margin;
+    text-transform: uppercase;
+    font-size: $text-size;
+    font-family: $font-family;
+    color: $btn-text-color;
+    letter-spacing: 1px;
+    border: 0px;
+
+}
+
+
+.primary-button {
+    @include buttons($primary-color, $secondary-color, $base-text-size, $font-family, 10px 20px, $btn-margin)
+}
+
+
+.secondary-button {
+    @include buttons($primary-color, $secondary-color, $base-text-size - 4, $font-family, 5px 10px, $btn-margin)
+}
+
+
+.secondary-text-link {
+    @include buttons($secondary-color, $primary-color, $base-text-size, $font-family, 10px 20px, $btn-margin)
+}
