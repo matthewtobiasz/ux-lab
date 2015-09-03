@@ -1,28 +1,41 @@
 // Color Palette Variables
+$grey1: #bfb9c3;
 $white: #f8f8f8;
 $body-copy-color: #3b3b3b;
 $page-bg-color: $white;
 $hover-color: #bf413c;
 $h1-color: #732c24;
 
-
 // Typography Settings
 $font-family: Sans-serif;
+$base-text-size: 16px;
 
+
+$margin: 30px;
+$padding: 10px;
 
 body {
     background-color: $page-bg-color;
     font-family: $font-family;
+    font-size: $base-text-size;
 }
 
 h1 {
     color: $h1-color;
 }
 
-h2, h3, h4, h5, {
+h1.page-title {
+    font-size: $base-text-size * 2;
+    color: $h1-color;
+    margin-bottom: $margin;
+    padding-bottom: $padding;
+    border-bottom:  1px solid $grey1;
+}
+
+h2, 
+h3, 
+h4, 
+h5, {
     color: $body-copy-color;
 }
 
-h1:hover {
-    color: $hover-color;
-}

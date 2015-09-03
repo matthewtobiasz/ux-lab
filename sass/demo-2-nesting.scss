@@ -1,19 +1,35 @@
-
-
 // Color Palette Variables
 $grey1: #bfb9c3;
 $white: #f8f8f8;
-
 $body-copy-color: #3b3b3b;
 $page-bg-color: $white;
 $highlight-color: #ff6351;
 $hover-color: #bf413c;
 $h1-color: #732c24;
+$base-text-size: 16px;
 
 // Typography Settings
 $font-family: Sans-serif;
 
+$margin: 30px;
 $padding: 10px;
+
+body {
+    background-color: $page-bg-color;
+    font-family: $font-family;
+}
+
+h1 {
+    color: $h1-color;
+}
+
+h1.page-title {
+    font-size: $base-text-size * 2;
+    color: $h1-color;
+    margin-bottom: $margin;
+    padding-bottom: $padding;
+    border-bottom:  1px solid $grey1;
+}
 
 nav {
     background-color: $grey1;
@@ -33,8 +49,6 @@ nav {
             color: $white;
         }
     }
-
-
 }
 
 ul {
@@ -47,8 +61,6 @@ ul {
         padding: 0;
         margin: 0;
     }
-
-
 }
 
 
