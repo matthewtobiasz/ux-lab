@@ -1,23 +1,35 @@
-//@import "compass/reset";
+@import "compass/reset";
 @import "compass/css3/transition";
 
+// Color Palette Variables
 $grey1: #bfb9c3;
+$body-copy-color: #3b3b3b;
+$page-title-color: #732c24;
+$page-title-color: #732c24;
+$hover-color: #bf413c;
 $primary-color: #000;
 $secondary-color: #fff;
-$h1-color: #732c24;
 
 // Typography Settings
-$font-family: sans-serif;
+$font-family: Sans-serif;
 $base-text-size: 16px;
+
+$h1-font-size: 3em;
+$h2-font-size: 2.4em;
+$h3-font-size: 1.8em;
+$h4-font-size: 1.4em;
+$h5-font-size: 1em;
+
 $margin: 30px;
 $padding: 10px;
-
 
 
 @mixin typography-labels($size: $base-text-size){
     font-size: $size;
     font-family: $font-family;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 
@@ -28,36 +40,57 @@ $padding: 10px;
     display: inline-block;
     padding: 10px 20px;
     margin: $margin;
-    text-transform: uppercase;
     background-color: $background-color;
     color: $text-color;
     border: 1px solid $text-color;
 
     &:hover {
-        background-color: $text-color;
+        background-color: $hover-color;
         color: $background-color;
-        border: 1px solid $background-color;
+
+        @if $text-color == $secondary-color {
+            color: $secondary-color;
+        }
+
+        border: 1px solid $hover-color;
 
         @include single-transition(all, 0.2s, ease-in);
     }
 }
 
+@mixin simple-call-to-action($text-color) {
+
+    @include typography-labels;
+
+    display: inline-block;
+    margin: $margin;
+    color: $text-color;
+    border-bottom: 2px solid $text-color;
+
+    &:hover {
+        color: $hover-color;
+        border-bottom: 2px solid $hover-color;
+        cursor: pointer;
+
+        @include single-transition(all, 0.2s, ease-in);
+    }
+}
+
+// Content Styles
 body {
     font-family: $font-family;
+    font-size: $base-text-size;
+    color: $body-copy-color;
+    margin: $margin;
 }
 
 h1.page-title {
     font-size: $base-text-size * 2;
-    color: $h1-color;
+    color: $page-title-color;
     margin-bottom: $margin;
     padding-bottom: $padding;
     border-bottom:  1px solid $grey1;
 }
-
-a {
-    text-decoration: none;
-}
-
 
 .primary-button {
     @include buttons($primary-color, $secondary-color);
@@ -67,7 +100,6 @@ a {
     @include buttons($secondary-color, $primary-color);
 }
 
-
 .secondary-text-link {
-    @include buttons($secondary-color, $primary-color);
+    @include simple-call-to-action($primary-color);
 }
